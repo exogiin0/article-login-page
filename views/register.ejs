@@ -1,0 +1,39 @@
+<section class=" my-4 mx-5">
+  <div class="container">
+    <div class="row no-gutters">
+      <div class="col-lg-5 ">
+        <img src="../public/images/register-img.jpg" class="img-fluid" alt="">
+      </div>
+      <div class="col-lg-7 px-5 pt-5">
+        <h2>Register</h2>
+        <%- include('./partials/messages') %>
+        <form action="/users/register" method="post" >
+          <div class="form-row">
+            <div class="col-lg-7">
+              <input type="text" id="name" name="name" placeholder="name" class="form-control my-3 p-4"
+                     required >
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="col-lg-7">
+              <input type="email" id="email" name="email" placeholder="Email" class="form-control
+                                my-3 p-4" required >
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="col-lg-7">
+              <input type="password" id="password" name="password" placeholder="Password"
+                     class="form-control my-3 p-4" required >
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="col-lg-7">
+              <button type="submit" class="login-btn mt-3 mb-5">Sign up</button>
+            </div>
+          </div>
+          <p>Already have an account? <a href="/users/login">Login</a></p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
